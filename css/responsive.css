@@ -1,0 +1,841 @@
+/* ==========================================================================
+   RESPONSIVE MEDIA QUERIES - ORGANIZED FROM LARGEST TO SMALLEST
+   ========================================================================== */
+
+/* Extra Large devices (large desktops, 1200px and down) */
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    padding: 0 15px;
+  }
+
+  .home-content h1 {
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .section-title h2 {
+    font-size: 36px;
+  }
+
+  .single-service {
+    padding: 30px 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and down) */
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 15px;
+  }
+
+  /* Hide navigation links on smaller screens */
+  .links {
+    display: none;
+    float: none;
+    background-color: #333333;
+    padding: 20px;
+  }
+
+  .links ul a {
+    float: none;
+  }
+
+  /* Show hamburger menu */
+  .hamburger-menu {
+    display: block;
+  }
+
+  .home-content {
+    padding: 0 15px;
+  }
+
+  .home-content h1 {
+    font-size: 55px;
+    line-height: 65px;
+  }
+
+  /* About section adjustments */
+  .about-image,
+  .about-content {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .profile-desc {
+    padding-left: 20px;
+  }
+
+  /* Profile about list items full width */
+  .profile-about ul li:nth-child(2n + 1),
+  .profile-about ul li:nth-child(2n) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  /* Services section */
+  .single-service {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  /* Portfolio section */
+  .card {
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  /* Facts section */
+  .facts {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+
+  /* Testimonial section */
+  .testimonel-area .container {
+    width: 90%;
+  }
+
+  .testimonel-cont {
+    padding-left: 20px;
+  }
+
+  /* Blog section */
+  .w-33 {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* Medium devices (tablets, 768px and down) */
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+
+  /* Header adjustments */
+  #header {
+    padding: 15px 0;
+  }
+
+  #header .logo a {
+    font-size: 22px;
+  }
+
+  /* Hero section */
+  .home-content h1 {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .home-content h4 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  /* About section */
+  .about-box {
+    margin-bottom: 30px;
+    box-shadow: 0 0 0 4px #555 inset;
+  }
+
+  .porfile-photo {
+    transform: translate(12px, 12px);
+  }
+
+  .profile-desc h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  /* Services section */
+  .single-service {
+    width: 50%;
+    margin-bottom: 25px;
+  }
+
+  .single-service-inner {
+    padding: 30px 10px;
+  }
+
+  /* Portfolio section */
+  .card {
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .portfolio-menu {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-menu button {
+    font-size: 14px;
+    padding: 5px 10px;
+    margin: 0 5px;
+  }
+
+  /* Facts section */
+  .facts {
+    gap: 40px;
+  }
+
+  .single-counter h3 {
+    font-size: 22px;
+  }
+
+  /* Testimonial section */
+  .testimonel-area .container {
+    width: 80%;
+  }
+
+  .testimonel-item {
+    padding: 30px 20px;
+  }
+
+  .testimonel-cont {
+    padding-left: 80px;
+  }
+
+  .testimonel-img {
+    width: 80px;
+  }
+
+  /* Blog section */
+  .w-33 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .single-blog {
+    padding: 15px;
+  }
+
+  /* Contact section */
+  .contact-form {
+    padding: 20px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-row input {
+    margin-bottom: 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and down) */
+@media (max-width: 576px) {
+  .container {
+    width: 100%;
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* Header mobile optimization */
+  #header {
+    padding: 0;
+    background: rgba(0, 0, 0, 0.98);
+  }
+
+  #header .logo a {
+    color: #ff305b;
+    display: block;
+    font-size: 24px;
+    font-weight: 800;
+    padding: 18px 0;
+    text-align: center;
+  }
+
+  .parent-menu-hamburger {
+    padding: 18px 0;
+  }
+
+  /* Mobile navigation */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  /* Hero section mobile */
+  .home-content {
+    padding: 0 20px;
+  }
+
+  .home-content h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 15px;
+  }
+
+  .home-content h4 {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  /* About section mobile */
+  .about-image,
+  .about-content {
+    width: 100%;
+  }
+
+  .about-image .about-box {
+    box-shadow: none;
+    margin-bottom: 25px;
+  }
+
+  .about-image .about-box .porfile-photo {
+    transform: none;
+  }
+
+  .profile-desc {
+    padding-left: 20px;
+  }
+
+  .profile-desc h2 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .profile-desc > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .profile-about ul li {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .download-cv-btn > a {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  /* Services section mobile */
+  .service-section {
+    padding: 60px 0 40px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+  }
+
+  .single-service {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .single-service-inner {
+    padding: 25px 15px;
+  }
+
+  .single-service i {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+
+  .single-service-inner > h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Portfolio section mobile */
+  .portfolio-area {
+    padding: 60px 0 40px;
+  }
+
+  .portfolio-menu {
+    margin-bottom: 30px;
+  }
+
+  .portfolio-menu button {
+    font-size: 12px;
+    padding: 5px 8px;
+    margin: 0 3px 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+  }
+
+  .portfolio {
+    margin-bottom: 20px;
+  }
+
+  /* Facts section mobile */
+  .fun-facts-area {
+    padding: 60px 0;
+  }
+
+  .facts {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .single-counter h3 {
+    font-size: 20px;
+  }
+
+  .single-counter h5 {
+    font-size: 14px;
+  }
+
+  .facts-icon i {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  /* Testimonial section mobile */
+  .testimonel-area {
+    padding: 60px 0;
+  }
+
+  .testimonel-area .container {
+    width: 95%;
+  }
+
+  .testimonel-item {
+    padding: 20px 15px;
+  }
+
+  .testimonel-cont {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .testimonel-img {
+    float: none;
+    margin: 0 auto 15px;
+    width: 70px;
+  }
+
+  .testimonel-item h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .testimonel-cont > p {
+    font-size: 14px;
+  }
+
+  .testimonel-item:after {
+    display: none;
+  }
+
+  /* Blog section mobile */
+  .blog-area {
+    padding: 60px 0 40px;
+  }
+
+  .w-33 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .single-blog {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .post-content {
+    padding: 15px;
+  }
+
+  .post-content > h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .post-content p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  /* Contact section mobile */
+  .contact-section {
+    padding: 40px 15px;
+  }
+
+  .contact-form {
+    padding: 20px 15px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-row input {
+    margin-bottom: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 10px 12px;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  /* Footer mobile */
+  .footer-area {
+    padding: 30px 0;
+  }
+
+  .copy-right {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  .footer-social-icon li a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0 8px;
+  }
+}
+
+/* Extra Small devices (portrait phones, 480px and down) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .home-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .section-title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .single-service-inner {
+    padding: 20px 10px;
+  }
+
+  .testimonel-item {
+    padding: 15px 10px;
+  }
+
+  .contact-form {
+    padding: 15px 10px;
+  }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 500px) and (orientation: landscape) {
+  .home-content h1 {
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .home-content {
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Optimize images and icons for retina displays */
+  .logo a {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  .no-print,
+  #header,
+  .hamburger-menu,
+  .mobile-menu,
+  .footer-social-icon {
+    display: none !important;
+  }
+
+  .container {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  .section {
+    page-break-inside: avoid;
+    padding: 20px 0 !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+/* ==========================================================================
+   UTILITY CLASSES FOR RESPONSIVE DESIGN
+   ========================================================================== */
+
+/* Visibility utilities */
+.visible-xs {
+  display: none !important;
+}
+.visible-sm {
+  display: none !important;
+}
+.visible-md {
+  display: none !important;
+}
+.visible-lg {
+  display: none !important;
+}
+.visible-xl {
+  display: none !important;
+}
+
+.hidden-xs {
+  display: block !important;
+}
+.hidden-sm {
+  display: block !important;
+}
+.hidden-md {
+  display: block !important;
+}
+.hidden-lg {
+  display: block !important;
+}
+.hidden-xl {
+  display: block !important;
+}
+
+@media (max-width: 576px) {
+  .visible-xs {
+    display: block !important;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .visible-sm {
+    display: block !important;
+  }
+  .hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .visible-md {
+    display: block !important;
+  }
+  .hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .visible-lg {
+    display: block !important;
+  }
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1201px) {
+  .visible-xl {
+    display: block !important;
+  }
+  .hidden-xl {
+    display: none !important;
+  }
+}
+
+/* Responsive text alignment */
+@media (max-width: 576px) {
+  .text-xs-left {
+    text-align: left !important;
+  }
+  .text-xs-center {
+    text-align: center !important;
+  }
+  .text-xs-right {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .text-sm-left {
+    text-align: left !important;
+  }
+  .text-sm-center {
+    text-align: center !important;
+  }
+  .text-sm-right {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+  .text-md-center {
+    text-align: center !important;
+  }
+  .text-md-right {
+    text-align: right !important;
+  }
+}
+
+@media (min-width: 993px) {
+  .text-lg-left {
+    text-align: left !important;
+  }
+  .text-lg-center {
+    text-align: center !important;
+  }
+  .text-lg-right {
+    text-align: right !important;
+  }
+}
+
+/* Responsive spacing */
+@media (max-width: 576px) {
+  .p-xs-0 {
+    padding: 0 !important;
+  }
+  .p-xs-1 {
+    padding: 0.25rem !important;
+  }
+  .p-xs-2 {
+    padding: 0.5rem !important;
+  }
+  .p-xs-3 {
+    padding: 1rem !important;
+  }
+
+  .m-xs-0 {
+    margin: 0 !important;
+  }
+  .m-xs-1 {
+    margin: 0.25rem !important;
+  }
+  .m-xs-2 {
+    margin: 0.5rem !important;
+  }
+  .m-xs-3 {
+    margin: 1rem !important;
+  }
+}
+
+/* Responsive flexbox utilities */
+@media (max-width: 576px) {
+  .flex-xs-column {
+    flex-direction: column !important;
+  }
+  .flex-xs-row {
+    flex-direction: row !important;
+  }
+  .justify-xs-center {
+    justify-content: center !important;
+  }
+  .justify-xs-start {
+    justify-content: flex-start !important;
+  }
+  .justify-xs-end {
+    justify-content: flex-end !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .flex-sm-column {
+    flex-direction: column !important;
+  }
+  .flex-sm-row {
+    flex-direction: row !important;
+  }
+  .justify-sm-center {
+    justify-content: center !important;
+  }
+  .justify-sm-start {
+    justify-content: flex-start !important;
+  }
+  .justify-sm-end {
+    justify-content: flex-end !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .flex-md-column {
+    flex-direction: column !important;
+  }
+  .flex-md-row {
+    flex-direction: row !important;
+  }
+  .justify-md-center {
+    justify-content: center !important;
+  }
+  .justify-md-start {
+    justify-content: flex-start !important;
+  }
+  .justify-md-end {
+    justify-content: flex-end !important;
+  }
+}
