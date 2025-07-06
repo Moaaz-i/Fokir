@@ -32,6 +32,7 @@
 
   /* Hide navigation links on smaller screens */
   .links {
+    clear: both;
     display: none;
     float: none;
     background-color: #333333;

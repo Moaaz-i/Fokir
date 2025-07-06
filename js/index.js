@@ -1,4 +1,5 @@
 const header = document.getElementById("header");
+const hamburger = document.getElementById("hamburger");
 
 let lastScrollY = window.scrollY;
 
@@ -8,10 +9,10 @@ window.addEventListener("scroll", () => {
   if (currentScrollY < lastScrollY || currentScrollY === 0) {
     header.style.top = "0";
     header.style.backgroundColor = "#333333";
-    const links = header.getElementsByClassName("links");
-    links.style.width = "100%";
+    hamburger.style.width = "100%";
     if (currentScrollY === 0) {
       header.style.backgroundColor = "transparent";
+      hamburger.style.width = "auto";
     }
   } else {
     header.style.top = "-100%";
@@ -23,8 +24,6 @@ window.addEventListener("scroll", () => {
 const parent_menu_hamburger = document.getElementById("btn");
 
 parent_menu_hamburger.addEventListener("click", () => {
-  const hamburger = document.getElementById("hamburger");
-
   if (hamburger.style.display === "none") {
     hamburger.style.display = "block";
     console.log(hamburger.style.display);
