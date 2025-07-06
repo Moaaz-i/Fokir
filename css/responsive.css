@@ -9,6 +9,12 @@
     padding: 0 15px;
   }
 
+  .links {
+    clear: both;
+    display: block;
+    float: right;
+  }
+
   .home-content h1 {
     font-size: 60px;
     line-height: 70px;
