@@ -12,6 +12,7 @@ window.addEventListener("scroll", () => {
     if (hamburger.style.float === "none") {
       hamburger.style.width = "100%";
     }
+
     if (currentScrollY === 0) {
       header.style.backgroundColor = "transparent";
       hamburger.style.width = "auto";
