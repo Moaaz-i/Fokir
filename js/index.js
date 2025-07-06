@@ -9,7 +9,9 @@ window.addEventListener("scroll", () => {
   if (currentScrollY < lastScrollY || currentScrollY === 0) {
     header.style.top = "0";
     header.style.backgroundColor = "#333333";
-    hamburger.style.width = "100%";
+    if (hamburger.style.float === "none") {
+      hamburger.style.width = "100%";
+    }
     if (currentScrollY === 0) {
       header.style.backgroundColor = "transparent";
       hamburger.style.width = "auto";

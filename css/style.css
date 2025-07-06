@@ -447,7 +447,7 @@ a.selected {
   overflow: hidden;
   position: relative;
   width: 110px;
-  z-index: 999;
+  z-index: 2;
 }
 .testimonel-item h3 {
   font-size: 26px;
