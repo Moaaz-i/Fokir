@@ -16,6 +16,9 @@
   line-height: 25px;
   font-weight: 600;
 }
+.links {
+  transition: all 0.5s;
+}
 .links a {
   color: white;
   padding: 0 8px;

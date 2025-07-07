@@ -8,14 +8,15 @@ window.addEventListener("scroll", () => {
 
   if (currentScrollY < lastScrollY || currentScrollY === 0) {
     header.style.top = "0";
-    header.style.backgroundColor = "#333333";
-    if (hamburger.style.float === "none") {
-      hamburger.style.width = "100%";
-    }
 
     if (currentScrollY === 0) {
       header.style.backgroundColor = "transparent";
       hamburger.style.width = "auto";
+    } else {
+      if (hamburger.style.float === "none") {
+        hamburger.style.width = "100%";
+      }
+      header.style.backgroundColor = "#333333";
     }
   } else {
     header.style.top = "-100%";
